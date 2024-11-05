@@ -4,14 +4,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Удаляем React.StrictMode для правильной работы Service Worker
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // React.StrictMode убран для корректной работы SW
+  <App />
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Регистрация Service Worker для оффлайн работы
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('/service-worker.js')
+      .then((registration) => {
+        console.log('Service Worker зарегистрирован:', registration);
+      })
+      .catch((registrationError) => {
+        console.log('Ошибка регистрации Service Worker:', registrationError);
+      });
+  });
+}
+
+// Метрики для анализа производительности приложения
 reportWebVitals();
