@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Qazaqbala-N/Leetcode-Stats/static/css/main.ea9007d2.css",
+    "main.js": "/Qazaqbala-N/Leetcode-Stats/static/js/main.b8996233.js",
+    "static/js/453.68a11e6f.chunk.js": "/Qazaqbala-N/Leetcode-Stats/static/js/453.68a11e6f.chunk.js",
+    "index.html": "/Qazaqbala-N/Leetcode-Stats/index.html",
+    "main.ea9007d2.css.map": "/Qazaqbala-N/Leetcode-Stats/static/css/main.ea9007d2.css.map",
+    "main.b8996233.js.map": "/Qazaqbala-N/Leetcode-Stats/static/js/main.b8996233.js.map",
+    "453.68a11e6f.chunk.js.map": "/Qazaqbala-N/Leetcode-Stats/static/js/453.68a11e6f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea9007d2.css",
+    "static/js/main.b8996233.js"
+  ]
+}
